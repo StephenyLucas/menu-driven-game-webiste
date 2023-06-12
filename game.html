@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main page</title>
+	<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+
+<body>
+
+<header id="header">
+<a href="#" class="logo">GAME CORNER</a>
+<ul>
+<li><a href="#" class="active">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Feedback</a></li>
+</ul>
+</header>
+
+<section> 
+<h2 id= "text"><span>Let's Begin The</span><br>Excitement</h2>
+<img src="bird1.png" id="bird1">
+<img src="bird2.png" id="bird2">
+<img src="forest.png" id="forest">
+<!-- <a href="#" id="btn">Explore</a> -->
+<img src="rocks.png" id="rocks">
+<img src="water.png" id="water">
+</section>
+
+ <div class="sec">
+	<!-- <h2>Games</h2>
+	<p>
+		<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </br>
+		<br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+		It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+		It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</br>
+
+		<br>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+		It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+		Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. 
+		This book is a treatise on the theory of ethics, very popular during the Renaissance. 
+		The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</br>
+
+		<br>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. 
+		Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+		<br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+		It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+		It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</br>
+
+		<br>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+		It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+		Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. 
+		This book is a treatise on the theory of ethics, very popular during the Renaissance. 
+		The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</br>
+
+		<br>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. 
+		S0ections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</br>
+
+
+
+
+	</p> -->
+
+<div class="background">
+<div class="box">
+<div class="box-insider"><font color="black">GAMES-CORNER</font> is a gaming website that includes some exciting game that you would love to play!!
+</div>
+<div class="container">
+<div class="topbar">GAMES TO PLAY!!</div>
+
+<p class="gamename1">SNAKE GAME</p>
+<img src="snake.png"class="image1"></img>
+
+
+<p class="gamename3">FLIP IT</p>
+<img src="flip card.png"class="image3"></img>
+
+
+ <p class="gamename5">BRAIN GAME</p>
+<img src="brain game.png"class="image5"></img>
+
+
+
+<p class="gamename7">BALL FALLING GAME</p>
+<img src="ball falling.png"class="image7"></img>
+
+
+
+
+
+<div class="horizontal-line"></div>
+
+<div class="vertical-line2"></div>
+
+
+<div class="endbar">GAMES-CORNER</div>
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+
+
+</div> 
+ 
+<script>
+	let text = document.getElementById('text');
+	let bird1 = document.getElementById('bird1');
+	let bird2 = document.getElementById('bird2');
+	// let btn = document.getElementById('btn')
+	let rocks = document.getElementById('rocks');
+	let forest = document.getElementById('forest');
+	let water = document.getElementById('water');
+	let header = document.getElementById('header');
+
+window.addEventListener('scroll', function(){
+		let value = window.scrollY;
+		
+		text.style.top = 50 + value * -0.5 + '%'; 
+		bird1.style.top = value * -1.5 + 'px';
+		bird1.style.left = value * 2 + 'px';
+		bird2.style.top = value * -1.5 + 'px';
+		bird2.style.left = value * -5 + 'px';
+		// btn.style.marginTop = value * 1.5 + 'px';
+		rocks.style.top = value * -0.12 + 'px';
+		forest.style.top = value * 0.25 + 'px';
+		header.style.top = value * 0.5 + 'px';
+
+
+			})
+
+</script>
+</body>
+</html>	

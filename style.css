@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+#header{
+    position: absolute;
+    top: 0;
+    left: 1150px; 
+    width: 0%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+#header ul 
+{ 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+} 
+
+#header ul li
+{
+    list-style: none; 
+    margin-left: 20;
+}
+
+#header ul li a
+{
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-weight: bolder;
+    margin-right: 3px;
+    padding: 6px 15px;
+    color: #094b65; 
+    background: white;
+    border-radius: 20px;
+
+}
+
+#header ul li a:hover,
+#header ul li a.active
+{
+    background: #094b65;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+.sky{
+    width: 100%;
+    height: 100vh;
+    background-image: url('sky.jpg');
+    position: absolute;
+    z-index: -1;
+    background-size: 100% 100%;
+    
+}
+#game{
+    width: 400px;
+    height: 500px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(45deg,#ff0,#f0f,#f00,#00f,#0f0);
+    border-image-slice: 1;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+
+}
+#character{
+    width: 20px;
+    height: 20px;
+    background-color:   #40e0d0;
+    box-shadow: 0 0 15px #08f;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    z-index: 1000000;
+    display: flex;
+    justify-content:start ;
+    align-items:  start;
+
+}
+.block{
+    width: 600px;
+    height: 10px;
+    background-color:           #6a5acd;
+    position: absolute;
+    top: 100px;
+    margin-top: -20px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+
+
+}
+.hole{
+    width: 60px;
+    height: 20px;
+    background-image: url('sky1.jpg');
+    position: absolute;
+    top: 100px;
+    margin-top: -20px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+
+}

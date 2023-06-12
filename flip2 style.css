@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body
+
+{
+	background-image: url(img3.jpg);
+    height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+img
+{
+    width: 100px;
+
+}
+
+#header{
+    position: absolute;
+    top: 0;
+    left: 1150px; 
+    width: 0%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+#header ul 
+{ 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+} 
+
+#header ul li
+{
+    list-style: none; 
+    margin-left: 20;
+}
+
+#header ul li a
+{
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-weight: bolder;
+    margin-right: 3px;
+    padding: 6px 15px;
+    color: #094b65; 
+    background: white;
+    border-radius: 20px;
+
+}
+
+#header ul li a:hover,
+#header ul li a.active
+{
+    background: #094b65;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+.game{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid blue;
+    width: 640px;
+    height: 640px;
+    perspective: 1000px;
+}
+
+.card{
+    width: 25%;
+    height: 33.33%;
+    position: relative;
+    border: 2px solid blueviolet;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.card:active{
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.frontface,.backface{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 2px solid olive;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: pink;
+    backface-visibility: hidden;
+
+
+}
+
+.frontface{
+    transform: rotateY(180deg);
+
+}
+
+/* //utility class */
+.card.flip{
+    transform: rotateY(180deg);
+}

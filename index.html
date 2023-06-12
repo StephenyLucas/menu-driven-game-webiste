@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main page</title>
+	<link rel="stylesheet" type="text/css" href="game_style.css">
+</head>
+
+<body>
+
+<header id="header">
+<a href="#" class="logo">GAME CORNER</a>
+<ul>
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="index_about.html">About</a></li>
+<li><a href="Feedback.html">Feedback</a></li>
+</ul>
+</header>
+
+
+<section> 
+<h2 id= "text"><span>Let's Begin The</span><br>Excitement</h2>
+<img src="bird1.png" id="bird1" style="height: 120%">
+<img src="bird2.png" id="bird2" style="height: 140%">
+<img src="forest.png" id="forest" style="height: 120%">
+	<!--style="height: 110%" -->
+<!-- <a href="#" id="btn">Explore</a> -->
+<img src="rocks.png" id="rocks">
+<img src="water.png" id="water">
+</section>
+
+<div class="sec">
+<div class="background">
+<div class="box">
+<div class="box-insider"><font color="black">GAME-CORNER</font> is a gaming website that includes some exciting games that you would love to play!!
+</div>
+<div class="container">
+<div class="topbar">GAMES TO PLAY!!</div>
+
+<!-- <p class="gamename1">SNAKE GAME</p>
+<img src="snake.png"class="image1"></img> -->
+<a href="index_snake.html">
+<p class="gamename1">SNAKEMANIA</p>
+<img src="snake.png"class="image1">
+</a>
+
+
+<a href="Button.html">
+ <p class="gamename3">FLIP IT</p>
+<img src="flip card.png"class="image3"></img>
+</a>
+<!-- <p class="gamename3">FLIP IT</p>
+<img src="flip card.png"class="image3"></img> -->
+
+
+  
+ <a href="index_quiz.html">
+ <p class="gamename5">BRAIN GAME</p>
+<img src="brain game.png"class="image5">
+</a>
+<!--<img src="brain game.png"class="image5"></img> -->
+
+
+<a href="index_Falling_ball.html">
+ <p class="gamename7">FALLING BALL GAME</p>
+<img src="ball falling.png"class="image7">
+</a>
+<!-- <p class="gamename7">FALLING BALL GAME</p>
+<img src="ball falling.png"class="image7"></img>
+ -->
+
+<div class="horizontal-line"></div>
+
+<div class="vertical-line2"></div>
+
+
+<div class="endbar">GAME-CORNER</div>
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+ 
+<script>
+	let text = document.getElementById('text');
+	let bird1 = document.getElementById('bird1');
+	let bird2 = document.getElementById('bird2');
+	let btn = document.getElementById('btn')
+	let rocks = document.getElementById('rocks');
+	let forest = document.getElementById('forest');
+	let water = document.getElementById('water');
+	let header = document.getElementById('header');
+
+window.addEventListener('scroll', function(){
+		let value = window.scrollY;
+		
+		text.style.top = 50 + value * -0.5 + '%'; 
+		bird1.style.top = value * -1.5 + 'px';
+		bird1.style.left = value * 2 + 'px';
+		bird2.style.top = value * -1.5 + 'px';
+		bird2.style.left = value * -5 + 'px';
+		// btn.style.marginTop = value * 1.5 + 'px';
+		rocks.style.top = value * -0.12 + 'px';
+		forest.style.top = value * 0.30 + 'px';
+		header.style.top = value * 0.5 + 'px';
+
+
+			})
+</script> 
+
+ 
+<div class="box3"> 
+<p class="text-one">MADE BY</p>
+<div class="line1"></div>
+<p class="text-two">&nbsp;MITALI DESAI&nbsp; &nbsp; &nbsp;&nbsp;SINCEE HARRIET &nbsp; &nbsp;&nbsp;&nbsp;AMISHA KHOT&nbsp; &nbsp; &nbsp;&nbsp;STEPHENY LUCAS</p>
+ <p class="text-three">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FLIP IT&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;SNAKEMANIA&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FALLING BALL GAME&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BRAIN GAME
+ <br><br><br><br>MADE WITH LOTS OF LOVE FOR EVERYONE TO ENJOY!! WE HOPE THAT YOU LIKED IT!!<br><br><br><br></p>
+ 
+</div> 
+</body>0
+</html>	

@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+/*@import url('https://www.fontspace.com/descendants-font-f34595');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');*/
+/*@import url('https://www.fontspace.com/blackpearl-font-f28295');
+@import url('https://www.fontspace.com/blackpearl-font-f28295');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');*/
+*
+
+{
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+
+	overflow-x: hidden;
+	background: white;
+	min-height: 100vh;
+}
+@font-face {
+    font-family: descendants;
+    src: url(Skullsandcrossbones-RppKM.ttf);
+}
+@font-face {
+    font-family: abc;
+    src: url(Skullsandcrossbones-RppKM.ttf);
+}
+
+@font-face {
+    font-family: xyz;
+    src: url(NewWaltDisneyFontRegular-BPen.ttf);
+}
+
+@font-face {
+    font-family: pqr;
+    src: url(Treasuremap-Ea1vj.ttf);
+}
+a{
+	text-decoration: none;
+	text-underline-position: none;
+}
+
+#header{
+	position: absolute;
+	top: 0;
+	left: 0; 
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;
+}
+
+#header .logo{
+	color: black;
+	font-weight: 700; 
+	font-size: 2.5em;
+	/*font-family: 'Ceviche One', cursive;*/
+	font-family: descendants;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+#header .logo:hover{
+	color: /*#911910*/ #094b65;
+	cursor: none;
+	letter-spacing: 5px;
+}
+
+#header ul 
+{ 
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+} 
+
+#header ul li
+{
+	list-style: none; 
+	margin-left: 20;
+}
+
+#header ul li a
+{
+	text-decoration: none;
+	font-family: 'Merriweather', serif;
+	font-weight: 600;
+	margin-right: 3px;
+	padding: 6px 15px;
+	color: #094b65;
+	border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active
+{
+	background: #094b65;
+	color: #fff;
+	letter-spacing: 0.5px;
+}
+
+section{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section::before{
+	content: '';
+	position: absolute;
+	/*margin-top: 600px;*/
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to top, #094b65,transparent);
+	z-index: 10;
+}
+
+
+section img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+
+}
+section #text{
+	position: absolute;
+	color: #094b65;
+	font-size: 10vw;
+	text-align: center;
+	line-height: 0.55em; 
+	font-family: 'Rancho', cursive;
+	transform: translateY(-50%);
+}
+
+section #text span{
+	font-size: 0.20em;
+	letter-spacing: 2px;
+	font-weight: 400;
+	font-family: 'Carter One', cursive;
+}
+
+/*#btn{
+	
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 30px; 
+	background: white;
+	color: #094b65;
+	font-size: 1.2em;
+	font-weight: 500;
+	letter-spacing: 2px;
+	border-radius: 40px;
+	transform: translateY(100px);
+}
+
+#btn:hover
+{
+	background: #094b65;
+	color: white
+
+}*/
+.sec{
+	position: absolute;
+	padding: 100px;
+	background: #094b65;
+}
+
+.sec h2{
+	font-size: 3.5em;
+	color: white;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.sec p{
+	/*font-size: em;*/
+	color: white;
+}
+	/*down part*/
+	
+	.background{
+	width:1500px;
+	height:1200px;
+	background: #094b65;
+	/*background-color:#094b65;*/
+	}
+
+	.box{
+	width:1200px;
+	height:150px;
+	box-shadow:white 5px 0px 10px 0px;
+/*	position: absolute;
+	margin-top: 90px;
+	margin-left:250px;
+	
+	/*margin-top: 1px;*/
+	border-radius:10px;
+	position: relative; 
+	/*top: 10px;	*/
+	margin-left: 80px;
+	background-color: #094b65;
+	}
+
+	.box-insider{
+	width:1120px;
+	height:110px;
+	box-shadow:red 3px 0px 10px 0px;
+	color:white;
+	border-radius:5px;
+	line-height:50px;
+	background-color:#094b65;
+	text-align:center;
+	font-size: 3em;
+	/*letter-spacing: 2px;*/
+	/*position: absolute;
+	margin-top: 10px;
+	margin-left: 150px;*/
+	position:relative;top:22px;left:35px;
+	/*position: relative;top: 10px;left: 150px;*/
+	/*font-family:cursive;*/
+	font-family: xyz;
+	}
+	.box-insider:hover{
+	background-color:aqua;
+	/*cursor:pointer;*/
+	box-shadow:white 5px 0px 20px 0px;
+	color:black;
+	}
+
+	.container{
+	width:1100px;
+	height:1050px;
+	box-shadow:white 5px 0px 15px 0px;
+	/*position: absolute;
+	margin-top: 130px;
+	margin-left: 150px;*/
+	position:absolute;top:200px;left:50px;
+	background-color: #094b65; 
+	}
+
+
+
+	.topbar{
+	width:1100px;
+	height:50px;
+	background-color:orange;
+	text-align:center;
+	line-height:50px;
+	font-size:2.5em;
+	font-weight: bold;
+	font-family: 'Irish Grover', cursive;
+	letter-spacing: 5px;
+	color:white;
+
+	}
+	.topbar:hover{
+	background-color:aqua;
+	color:red;
+	letter-spacing:10px;
+	font-size: 2.8em;
+	}
+
+	.gamename1{
+	color:white;
+	letter-spacing: 4px;
+	font-weight:bold;
+	font-family: abc;
+	font-size: 2.5em;
+	margin-top:30px;
+	margin-left:660px;
+	}
+
+	.gamename1:hover{
+	color:aqua;
+	/*letter-spacing: 4px;*/
+	}
+
+	.image1{
+	width:478px;
+	height:308px;
+	margin-top:20px;
+	margin-left:585px;
+	margin-bottom: 0px;
+	}
+
+	.image1:hover{
+	transform:translateY(18px);
+	transition:transform 1s;
+	box-shadow:aqua 5px 0px 10px 0px;
+	cursor:pointer;
+	}
+
+
+	.gamename3{
+	color:white;
+	font-weight:bold;
+	letter-spacing: 4px;
+	font-weight:bold;
+	font-family: abc;
+	font-size: 2.5em;
+	margin-top:-395px;
+	margin-left:185px;
+	}
+	.gamename3:hover{
+	color:aqua;
+	/*letter-spacing: 4px;*/
+	}
+
+	.image3{
+	width:478px;
+	height:308px;
+	margin-top:20px;
+	margin-left:30px;
+	}
+
+	.image3:hover{
+	transform:translateY(18px);
+	transition:transform 1s;
+	box-shadow:aqua 5px 0px 10px 0px;
+	cursor:pointer;
+	}
+
+
+
+
+
+	.gamename5{
+	color:white;
+	font-weight:bold;
+	letter-spacing: 4px;
+	font-weight:bold;
+	font-family: abc;
+	font-size: 2.5em;
+	margin-top: 70px;
+	margin-left:670px;
+	}
+	.gamename5:hover{
+	color:aqua;
+	/*letter-spacing: 4px;*/
+	/*cursor:pointer;*/
+	}
+
+	.image5{
+	width:478px;
+	height:308px;
+	margin-top:20px;
+	margin-left:585px;
+	}
+
+	.image5:hover{
+	transform:translateY(18px);
+	transition:transform 1s;
+	box-shadow:aqua 5px 0px 10px 0px;
+	cursor:pointer;
+	}
+
+
+
+	.gamename7{
+	color:white;
+	font-weight:bold;
+
+	letter-spacing: 4px;
+	/*font-weight:bold;*/
+	font-family: abc;
+	font-size: 2.5em;
+	/*font-size: 3em;*/
+	margin-top:-390px;
+	margin-left:20px;
+	}
+	.gamename7:hover{
+	color:aqua;
+
+	/*letter-spacing: 4px;*/
+	/*cursor:pointer;*/
+	}
+
+	.image7{
+	width:478px;
+	height:308px;
+	margin-top:20px;
+	margin-left:30px;
+	}
+
+
+	.image7:hover{
+	transform:translateY(18px);
+	transition:transform 1s;
+	box-shadow:aqua 5px 0px 10px 0px;
+	cursor:pointer;
+	}
+
+	
+
+
+	.horizontal-line{
+	width:1100px;
+	height:3px;
+	position: absolute;top: 950px;
+	background-color:yellow;
+	margin-top:-450px;
+	}
+
+
+
+	.vertical-line2{
+	width:850px;
+	height:3px;
+	position: absolute;top: 500px; left: 125px;
+	background-color:yellow;
+	transform:rotate(90deg);
+	/*margin-left:170px;*/
+	/*margin-top: 20px;*/
+	}
+
+	.endbar{
+	width:1100px;
+	height:40px;
+	background-color:aqua;
+	position:absolute;top:970px;
+	text-align:center;
+	color:black;
+	font-weight:bold;
+	font-size: 2em;
+	font-family: 'Irish Grover', cursive;
+	line-height:40px;
+	letter-spacing:10px;
+	}
+
+	.endbar:hover{
+	background-color:white;
+	color:red;
+	letter-spacing: 15px;
+	}
+
+	.box3{
+	width:110%;
+	height:50%;
+	position: relative; top: 1400px;		
+	background-color: salmon;
+	}
+
+	.text-one{
+	color: black;
+	/*font-weight:bold*/
+	/*font-weight: 10000px;*/
+	font-size:2.5em;
+	/*font-family: 'Bree Serif', serif;*/
+	font-family: pqr;
+	letter-spacing: 1px;
+	text-align: center;
+	/*font-weight: bold;*/
+	/*font-weight: 10000px;*/
+	font-size: 2em;
+	line-height:80px;
+	font-weight: 500;
+	position:relative;top:10px;
+	margin-right: 150px;
+	text-shadow:0px 10px 10px white;
+	}
+
+
+
+	.line1{
+	width:200px;
+	height:5px;
+	background-color: black;
+	margin-left:665px;
+	margin-top:-5px;
+	font-size: 5em;
+	font-weight: 700px;
+	/*font-weight: bold;*/
+	letter-spacing: 1px;
+	}
+
+	.text-two{
+	color: black;
+	margin-left:20px;
+	line-height:120px;
+	text-shadow:0px 10px 10px white;
+	/*font-weight: bold;*/
+	font-weight: 700;
+	font-size: 2em;
+	letter-spacing: 1px;
+	/*font-family: 'Bree Serif', serif;*/
+	font-family:pqr;
+	}
+
+
+
+	.text-three{
+	color: black;
+	margin-left:10px;
+	line-height:20px;
+	text-shadow:0px 10px 10px white;
+	font-weight: 500;
+	font-size: 1.75em;
+	/*font-family: 'Bree Serif', serif;*/
+	font-family:pqr;	
+	letter-spacing: 1px;
